@@ -1,0 +1,99 @@
+.hero {
+  margin-bottom: 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__column {
+    height: 829px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: end;
+    padding-top: 336px;
+
+    &_text {
+      width: 34%;
+    }
+
+    &_img {
+      width: 66%;
+      background-image: url("@img/hero/hero-img.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title {
+    margin-bottom: 90px;
+    max-width: 331px;
+    text-transform: uppercase;
+
+    &_black {
+      font-weight: 700;
+      color: #333333;
+    }
+  }
+}
+
+.nav {
+  &__block {
+    display: flex;
+    margin-bottom: 90px;
+  }
+
+  &__arrow {
+    width: 53px;
+    height: 53px;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_left {
+      margin-right: 23px;
+    }
+
+    &_right {
+      background: #f9f9f9;
+    }
+  }
+
+  &__icon {
+    width: 17px;
+  }
+}
+
+.pages {
+  &__items {
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #bdbdbd;
+
+    &_current {
+      &::after {
+        display: inline-block;
+        content: "";
+        position: relative;
+        top: -5px;
+        left: 0;
+        width: 44px;
+        height: 1px;
+        border: 1px solid #e0e0e0;
+        transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+        margin: 0 26px;
+      }
+    }
+
+    &_last {
+    }
+  }
+}

@@ -13,13 +13,13 @@ body {
 }
 
 body {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
   font-size: 16px;
   min-width: 320px;
   margin: 0;
   font-family: $font-family;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   color: #000;
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
@@ -60,31 +60,23 @@ body {
 }
 
 .container {
-  max-width: 1790px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .title {
   margin: 0;
-  font-family: "Chronicle Display";
-  font-weight: 600;
+  font-weight: 300;
   font-size: 64px;
-  line-height: 77px;
+  line-height: 64px;
+  color: #bdbdbd;
 }
 
 .subtitle {
   margin: 0;
-  line-height: 32px;
-}
-
-.uptitle {
-  margin: 0;
-  font-weight: 800;
-  line-height: 22px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: #fbd784;
+  font-weight: 300;
+  line-height: 25px;
 }
 
 .link {
@@ -92,5 +84,29 @@ body {
 
   &:hover {
     border-bottom: 2px solid currentColor;
+  }
+}
+
+.btn {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 30px 50px;
+  background-color: #fff;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 15px;
+    width: 17px;
+    height: 8px;
+    background-image: url("@img/icons/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

@@ -1,0 +1,45 @@
+.header {
+  &__container {
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 34%;
+
+    &_img {
+    }
+  }
+}
+
+.nav {
+  width: 66%;
+  display: flex;
+
+  &__li {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    line-height: 19px;
+    transition: all 0.2s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+
+    &:hover {
+      border-top: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+    }
+  }
+
+  &__a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}
