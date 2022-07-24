@@ -1,12 +1,48 @@
 .about {
   &__container {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__column {
     &_imgs {
+      display: flex;
     }
 
     &_text {
+    }
+  }
+
+  &__subcolumn {
+    &_single {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("@img/about/img-2.jpg");
+      width: 270px;
+      height: 345px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__row {
+    width: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_first {
+      height: 265px;
+      background-image: url("@img/about/img-1.jpg");
+      margin-bottom: 30px;
+    }
+
+    &_second {
+      height: 140px;
+      background-image: url("@img/about/img-3.jpg");
     }
   }
 
@@ -15,5 +51,7 @@
   }
 
   &__subtitle {
+    margin-bottom: 20px;
+    max-width: 400px;
   }
 }
