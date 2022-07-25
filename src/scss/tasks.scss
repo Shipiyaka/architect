@@ -1,7 +1,7 @@
 .tasks {
   margin-bottom: 120px;
 
-  &_column {
+  &__column {
     display: flex;
     align-items: center;
 
@@ -27,7 +27,20 @@
   }
 
   &__img {
+    min-width: 115px;
+    height: 145px;
     margin-right: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &_first {
+      background-image: url("@img/tasks/1.svg");
+    }
+
+    &_second {
+      background-image: url("@img/tasks/2.svg");
+    }
   }
 
   &__subtitle {
