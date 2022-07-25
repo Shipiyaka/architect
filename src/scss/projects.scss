@@ -1,0 +1,114 @@
+.projects {
+  margin-bottom: 120px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__btn {
+    align-self: flex-end;
+    color: #ffffff;
+    background-color: #333333;
+
+    &::after {
+      background-image: url("@img/icons/arrow-right-white.svg");
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 413px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  &__btn {
+    font-family: "GothicA1";
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 0;
+
+    &::after {
+      background-image: url("@img/icons/arrow-right-white.svg");
+    }
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10px;
+    background-color: rgb(0, 0, 0, 0.7);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+
+  &__item {
+    height: 255px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    position: relative;
+
+    &_first {
+      width: 570px;
+      background-image: url("@img/projects/img-1.jpg");
+    }
+
+    &_second {
+      width: 570px;
+      background-image: url("@img/projects/img-2.jpg");
+    }
+
+    &_third {
+      width: 270px;
+      background-image: url("@img/projects/img-3.jpg");
+    }
+
+    &_fourth {
+      width: 470px;
+      background-image: url("@img/projects/img-4.jpg");
+    }
+
+    &_fifth {
+      width: 370px;
+      background-image: url("@img/projects/img-5.jpg");
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover .gallery__inner {
+      opacity: 1;
+    }
+  }
+}

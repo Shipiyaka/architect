@@ -1,0 +1,39 @@
+.tasks {
+  margin-bottom: 120px;
+
+  &_column {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+      max-width: 413px;
+    }
+
+    &:nth-child(2) {
+      max-width: 570px;
+    }
+  }
+
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    margin-right: 40px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+  }
+}
