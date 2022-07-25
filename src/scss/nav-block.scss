@@ -1,0 +1,28 @@
+.nav {
+  &__block {
+    display: flex;
+    margin-bottom: 90px;
+  }
+
+  &__arrow {
+    width: 53px;
+    height: 53px;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_left {
+      margin-right: 23px;
+    }
+
+    &_right {
+      background: #f9f9f9;
+    }
+  }
+
+  &__icon {
+    width: 17px;
+  }
+}

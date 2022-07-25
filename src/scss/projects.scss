@@ -31,7 +31,7 @@
   }
 }
 
-.gallery {
+.arcade {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -118,7 +118,7 @@
       margin-right: 30px;
     }
 
-    &:hover .gallery__inner {
+    &:hover .arcade__inner {
       opacity: 1;
     }
   }

@@ -2,6 +2,8 @@
 @import "vars";
 @import "global";
 @import "burger";
+@import "nav-block";
+@import "pages-item.scss";
 
 @import "header";
 @import "hero";
@@ -10,5 +12,7 @@
 @import "projects";
 @import "contact";
 @import "footer";
+
+@import "gallery";
 
 @import "adaptive";

@@ -1,5 +1,5 @@
 @media (max-width: 1225px) {
-  .gallery__title {
+  .arcade__title {
     font-size: 46px;
     line-height: 46px;
   }
@@ -51,7 +51,7 @@
     margin-bottom: 30px;
   }
 
-  .gallery__inner {
+  .arcade__inner {
     display: none;
   }
 
@@ -82,11 +82,11 @@
     line-height: 30px;
   }
 
-  .gallery__row {
+  .arcade__row {
     flex-direction: column;
   }
 
-  .gallery__item {
+  .arcade__item {
     width: 100%;
   }
 
