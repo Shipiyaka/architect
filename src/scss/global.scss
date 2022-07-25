@@ -95,6 +95,7 @@ body {
   color: #333333;
   padding: 30px 50px;
   background-color: #fff;
+  transition: all 0.2s ease-in-out;
 
   &::after {
     display: inline-block;
@@ -108,5 +109,14 @@ body {
     background-image: url("@img/icons/arrow-right.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #333333;
+
+    &::after {
+      background-image: url("@img/icons/arrow-right-white.svg");
+    }
   }
 }

@@ -14,9 +14,19 @@
     align-self: flex-end;
     color: #ffffff;
     background-color: #333333;
+    transition: all 0.2s ease-in-out;
 
     &::after {
       background-image: url("@img/icons/arrow-right-white.svg");
+    }
+
+    &:hover {
+      color: #333333;
+      background-color: #fff;
+
+      &::after {
+        background-image: url("@img/icons/arrow-right.svg");
+      }
     }
   }
 }

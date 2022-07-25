@@ -49,6 +49,15 @@
     &::after {
       background-image: url("@img/icons/arrow-right-white.svg");
     }
+
+    &:hover {
+      color: #333333;
+      background-color: #fff;
+
+      &::after {
+        background-image: url("@img/icons/arrow-right.svg");
+      }
+    }
   }
 }
 
