@@ -1,17 +1,20 @@
 .nav-li {
   transition: color 0.2s ease-in-out;
+
   &:not(:last-child) {
     margin-right: 40px;
   }
-
-  &:hover {
-    color: #000;
+  @media only screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
   }
 }
 
 .nav-top {
   display: flex;
   align-items: center;
+
   @media only screen and (max-width: 768px) {
     background-color: #fff;
     flex-direction: column;
@@ -32,45 +35,30 @@
   }
 }
 
-.nav-li:not(:last-child) {
-  margin-right: 40px;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-top .nav-li:not(:last-child) {
-    margin-right: 0;
-  }
-}
-
 .nav-li-a {
-  // font-family: "Gilroy";
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 18px;
-  // line-height: 22px;
-  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
   margin: 0;
-  transition: color 0.3s ease-in-out;
   display: block;
-  padding: 4px 0;
+  padding: 2px 0;
   transition: all 0.1s ease-in-out;
   position: relative;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 
-  &:hover::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
+  &:hover {
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
   }
+}
 
-  @media only screen and (max-width: 768px) {
-    color: #000;
-
-    &:hover {
-      color: #005140;
-    }
+@media (min-width: 993px) {
+  .burger {
+    width: 64%;
   }
 }
 
@@ -98,7 +86,7 @@
 .burger-line {
   width: 30px;
   height: 2px;
-  background: rgb(255, 255, 255);
+  background: #000;
   transition: 0.3s all;
 }
 
@@ -117,13 +105,13 @@
 
 #check-burger:checked ~ label .burger-span .burger-line.second-line {
   transform: rotate(45deg);
-  background: #005140;
+  background: #099caa;
   height: 2px;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.third-line {
   transform: rotate(-45deg);
-  background: #005140;
+  background: #099caa;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.fourth-line {
