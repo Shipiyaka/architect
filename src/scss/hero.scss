@@ -25,18 +25,13 @@
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
+      justify-content: flex-end;
     }
   }
 
   &__title {
     margin-bottom: 90px;
     max-width: 331px;
-    text-transform: uppercase;
-
-    &_black {
-      font-weight: 700;
-      color: #333333;
-    }
   }
 
   &__btn {

@@ -1,0 +1,46 @@
+.sertif {
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    max-width: 469px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    height: 450px;
+    width: 337px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:nth-child(1) {
+      background-image: url("@img/certif/img-01.jpg");
+    }
+
+    &:nth-child(2) {
+      background-image: url("@img/certif/img-02.jpg");
+    }
+
+    &:nth-child(3) {
+      background-image: url("@img/certif/img-03.jpg");
+    }
+  }
+
+  &__control {
+    justify-content: flex-end;
+
+    & > div:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.container {
+}

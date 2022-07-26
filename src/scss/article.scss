@@ -1,0 +1,64 @@
+.article {
+  margin-bottom: 120px;
+
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+
+  &__title_main {
+    margin-bottom: 60px;
+
+    &_black {
+      font-weight: 700;
+      color: #333333;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__img {
+    height: 435px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_first {
+      background-image: url("@img/article/img-01.jpg");
+    }
+
+    &_second {
+      display: inline-block;
+      max-width: 419px;
+      height: 420px;
+      background-image: url("@img/article/img-02.jpg");
+      float: left;
+      margin: 0 30px 30px 0;
+
+      @media (max-width: 768px) {
+        float: none;
+        margin-right: calc(100vw - 419px);
+
+        &::after {
+          display: inline-block;
+          content: "";
+        }
+      }
+    }
+
+    &_third {
+      background-image: url("@img/article/img-03.jpg");
+    }
+  }
+  &__subtitle {
+    display: inline;
+  }
+}

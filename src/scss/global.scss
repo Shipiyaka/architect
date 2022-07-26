@@ -71,6 +71,15 @@ body {
   font-size: 64px;
   line-height: 64px;
   color: #bdbdbd;
+
+  &_main {
+    text-transform: uppercase;
+  }
+
+  &_black {
+    font-weight: 700;
+    color: #333333;
+  }
 }
 
 .subtitle {
