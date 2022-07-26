@@ -1,0 +1,123 @@
+.get-in {
+  margin-bottom: 112px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 0;
+  }
+
+  &__container {
+  }
+
+  &__columns {
+    display: flex;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    &_text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 34px;
+
+      @media (max-width: 992px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    &_img {
+      max-width: 1319px;
+      width: calc(100vw - (481px + 34px + 15px));
+      height: 501px;
+      margin-right: calc((100vw - (481px + 34px + 15px)) * (-1));
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("@img/get-in/img-01.jpg");
+      @media (max-width: 992px) {
+        width: 100vw;
+        margin-left: -15px;
+      }
+    }
+  }
+
+  &__title {
+    &_main {
+      max-width: 481px;
+      margin: 63px 0 34px 0;
+
+      @media (max-width: 992px) {
+        max-width: none;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 46px;
+        line-height: 55px;
+      }
+    }
+
+    &_black {
+      @media (max-width: 576px) {
+        font-size: 46px;
+        line-height: 55px;
+      }
+    }
+  }
+
+  &__subtitle {
+    max-width: 250px;
+    margin-bottom: 43px;
+
+    &_black {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #333333;
+    }
+
+    @media (max-width: 992px) {
+      max-width: none;
+    }
+  }
+
+  &__link {
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+
+    &_black {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #333333;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__btn {
+    font-family: "TTHoves";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #333333;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      color: #333;
+      background-color: #fff;
+    }
+  }
+}
