@@ -22,6 +22,7 @@
       flex-direction: column;
       align-items: flex-start;
       margin-right: 34px;
+      width: 40%;
 
       @media (max-width: 992px) {
         margin-right: 0;
@@ -30,14 +31,9 @@
     }
 
     &_img {
-      max-width: 1319px;
-      width: calc(100vw - (481px + 34px + 15px));
+      width: calc(60% + (100vw - 1170px) / 2);
       height: 501px;
-      margin-right: calc((100vw - (481px + 34px + 15px)) * (-1));
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url("@img/get-in/img-01.jpg");
+      margin-right: calc((100vw - 1170px) * -1 / 2);
       @media (max-width: 992px) {
         width: 100vw;
         margin-left: -15px;

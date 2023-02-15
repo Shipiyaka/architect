@@ -1,7 +1,16 @@
 <header class="header">
   <div class="header__container container">
     <div class="header__logo">
-      <img src="@img/icons/logo.svg" alt="" class="header__logo_img" />
+      <object
+        type="image/svg+xml"
+        data="@img/icons/logo.svg"
+        class="header__logo_img"
+        width="70"
+        height="44"
+      >
+        Your browser does not support SVG
+      </object>
+      <!-- <img src="@img/icons/logo.svg" alt="" class="header__logo_img" /> -->
     </div>
     @@include('burger.html')
   </div>
