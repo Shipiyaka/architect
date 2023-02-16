@@ -2,41 +2,58 @@
   margin-bottom: 120px;
 
   &__container {
-    display: flex;
-    align-items: center;
+    max-width: none;
+    padding: 0;
   }
 
   &__column {
-    height: 829px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: end;
-    padding-top: 336px;
+    justify-content: flex-start;
 
     &_text {
+      padding-top: 336px;
+      height: 100%;
       width: 36%;
     }
 
     &_img {
       width: 64%;
-      background-image: url("@img/hero/hero-img.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
       position: relative;
-      justify-content: flex-end;
     }
   }
 
   &__title {
-    margin-bottom: 90px;
+    margin-bottom: 233px;
     max-width: 331px;
   }
 
   &__btn {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 5;
   }
 }
+
+// @media (max-width: 1225px) {
+//   .hero {
+//     &__container {
+//     }
+
+//     &__column {
+//       &_text {
+//       }
+
+//       &_img {
+//       }
+//     }
+
+//     &__title {
+//     }
+
+//     &__btn {
+//     }
+//   }
+// }

@@ -1,15 +1,52 @@
 <section class="hero">
   <div class="hero__container container">
-    <div class="hero__column hero__column_text">
+    <!-- <div class="hero__column hero__column_text">
       <h1 class="hero__title hero__title_main title title_main">
         Project
         <span class="hero__title_black title title_black">Nurtown</span>
       </h1>
       @@include('nav-block.html') @@include('pages-item.html')
-    </div>
+    </div> -->
 
-    <div class="hero__column hero__column_img">
-      <btn class="hero__btn btn btn-reset">Take a look</btn>
+    <div class="itcss" id="slider-hero">
+      <div class="itcss__wrapper">
+        <div class="itcss__items">
+          <div class="itcss__item">
+            <div class="hero__column hero__column_text">
+              <h1 class="hero__title hero__title_main title title_main">
+                Project
+                <span class="hero__title_black title title_black">Nurtown</span>
+              </h1>
+              @@include('pages-item.html')
+            </div>
+            <div class="hero__column hero__column_img">
+              <img src="@img/hero/hero-img-01.jpg" alt="" />
+              <btn class="hero__btn btn btn-reset">Take a look</btn>
+            </div>
+          </div>
+          <div class="itcss__item">
+            <div class="hero__column hero__column_text">
+              <h1 class="hero__title hero__title_main title title_main">
+                Project
+                <span class="hero__title_black title title_black">Sepia</span>
+              </h1>
+              @@include('pages-item.html')
+            </div>
+            <div class="hero__column hero__column_img">
+              <img src="@img/hero/hero-img-02.jpg" alt="" />
+              <btn class="hero__btn btn btn-reset">Take a look</btn>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrapper">
+        <button class="nav__arrow nav__arrow_left btn-prev btn-reset">
+          <img src="@img/icons/arrow-left.svg" alt="" class="nav__icon" />
+        </button>
+        <button class="nav__arrow nav__arrow_right btn-next btn-reset">
+          <img src="@img/icons/arrow-right.svg" alt="" class="nav__icon" />
+        </button>
+      </div>
     </div>
   </div>
 </section>

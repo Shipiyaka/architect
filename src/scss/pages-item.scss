@@ -7,8 +7,18 @@
     font-size: 24px;
     line-height: 24px;
     color: #bdbdbd;
+    position: relative;
 
     &_current {
+      color: #7b7b7b;
+
+      &::before {
+        content: counter(slide);
+        position: absolute;
+        top: 0px;
+        left: 2px;
+      }
+
       &::after {
         display: inline-block;
         content: "";
@@ -18,7 +28,7 @@
         width: 44px;
         height: 1px;
         border: 1px solid #e0e0e0;
-        transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+        transform: matrix(-0.71, 0.71, -0.71, -0.71, 4, -1);
         margin: 0 26px;
       }
     }

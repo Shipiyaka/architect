@@ -12,12 +12,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s all ease-in-out;
 
     &_left {
       margin-right: 23px;
     }
 
     &_right {
+    }
+
+    &:hover {
       background: #f9f9f9;
     }
   }
