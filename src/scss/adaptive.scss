@@ -43,6 +43,29 @@
     &__btn {
     }
   }
+
+  .gallery__container .itcss#slider-gallery {
+  }
+
+  .itcss#slider-gallery .itcss__indicators {
+  }
+
+  .itcss#slider-gallery .itcss__wrapper {
+  }
+
+  .itcss#slider-gallery .itcss__items {
+  }
+
+  .itcss#slider-gallery .itcss__item {
+    max-width: none;
+    margin: 0;
+  }
+
+  .itcss#slider-gallery .pages__items {
+  }
+
+  .itcss#slider-gallery .btn-wrapper {
+  }
 }
 
 @media (max-width: 992px) {
@@ -98,32 +121,16 @@
     }
   }
 
-  // .hero__column {
-  //   width: 100%;
-  //   padding-top: 100px;
-  // }
-
-  // .hero__column_img {
-  //   height: 600px;
-  // }
-
-  // .hero__column_text {
-  //   height: auto;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
-
-  // .hero__title {
-  //   margin-bottom: 0;
-  // }
-
-  // .nav__block {
-  //   margin-bottom: 0;
-  // }
-
   .about__container {
     flex-direction: column-reverse;
+  }
+
+  .about__column_imgs {
+    margin-top: 20px;
+  }
+
+  .about__subtitle {
+    max-width: none;
   }
 
   .tasks__columns {
@@ -144,14 +151,6 @@
 }
 
 @media (max-width: 768px) {
-  // .hero__column_text {
-  //   flex-wrap: wrap;
-  // }
-
-  // .hero__title {
-  //   margin-bottom: 30px;
-  // }
-
   .about__column_imgs {
     justify-content: space-between;
   }
@@ -187,9 +186,6 @@
 }
 
 @media (max-width: 576px) {
-  .itcss#slider-hero .itcss__item {
-  }
-
   .itcss#slider-hero .pages__items {
     left: 0;
   }
@@ -218,9 +214,10 @@
     &__title {
       padding-bottom: 20px;
     }
+  }
 
-    &__btn {
-    }
+  .about__container {
+    padding: 30px 30px 0 30px;
   }
 
   .about__column_imgs {
@@ -245,15 +242,40 @@
 
   .contact__column_form {
     margin-right: 0;
+    max-width: none;
   }
 
   .contact__column_img {
     display: none;
   }
+
+  .footer__title {
+    font-size: 22px;
+  }
+
+  .footer__subtitle {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+
+  .socials {
+    width: 230px;
+
+    &__img {
+      font-size: 28px;
+    }
+  }
 }
 
 @media (max-width: 375px) {
+  .itcss#slider-hero .btn-wrapper {
+    top: 89px;
+  }
+
   .title {
-    font-size: 50px;
+    font-size: 26px;
   }
 }

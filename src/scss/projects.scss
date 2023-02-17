@@ -60,10 +60,21 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: transparent;
-    padding: 0;
+    // padding: 0;
+    padding: 3px;
+    margin: -3px;
 
     &::after {
       background-image: url("@img/icons/arrow-right-white.svg");
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: #333333;
+
+      &::after {
+        background-image: url("@img/icons/arrow-right.svg");
+      }
     }
   }
 

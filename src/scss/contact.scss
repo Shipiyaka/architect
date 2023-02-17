@@ -68,19 +68,21 @@
     height: 46px;
     margin-bottom: 10px;
     padding: 15px 21px;
+    transition: 0.1s outline ease-in-out;
   }
 
   &__textarea {
     background-color: #f3f3f3;
     width: 100%;
     height: 147px;
-    padding: 15px 0 0 21px;
+    padding: 15px 21px;
+    transition: 0.1s outline ease-in-out;
+    resize: none;
+    border: solid 2px #f3f3f3;
   }
 
   &__input:focus,
-  &__input:focus-visible,
-  &__textarea:focus,
-  &__textarea:focus-visible {
-    outline: 2px solid #099caa;
+  &__textarea:focus {
+    outline: 1px solid #017a83;
   }
 }

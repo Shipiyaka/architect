@@ -66,9 +66,14 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     max-width: 314px;
+    transition: 0.3s color ease-in-out;
 
     &:not(:last-child) {
       margin-bottom: 16px;
+    }
+
+    &:hover {
+      color: rgb(216, 130, 0);
     }
   }
 
@@ -89,12 +94,18 @@
 }
 
 .socials {
-  width: 186px;
+  width: 193px;
   display: flex;
   justify-content: space-between;
   color: #ffffff;
 
   &__img {
+    transition: 0.3s color ease-in-out;
+    font-size: 24px;
+
+    &:hover {
+      color: rgb(216, 130, 0);
+    }
   }
 }
 

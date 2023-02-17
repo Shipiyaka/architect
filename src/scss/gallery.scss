@@ -1,17 +1,20 @@
 .gallery {
   &__container {
+    max-width: none;
+    padding: 0;
   }
 
   &__title {
     margin-bottom: 60px;
     max-width: 450px;
+    margin-left: $left-border;
   }
 
   &__items {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, 210px);
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
   }
 
   &__item {
@@ -22,44 +25,84 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    &:nth-child(1) {
+    &_01 {
       background-image: url("@img/gallery/img-01.jpg");
     }
 
-    &:nth-child(2) {
+    &_02 {
       background-image: url("@img/gallery/img-02.jpg");
     }
 
-    &:nth-child(3) {
+    &_03 {
       background-image: url("@img/gallery/img-03.jpg");
     }
 
-    &:nth-child(4) {
+    &_04 {
       background-image: url("@img/gallery/img-04.jpg");
     }
 
-    &:nth-child(5) {
+    &_05 {
       background-image: url("@img/gallery/img-05.jpg");
     }
 
-    &:nth-child(6) {
+    &_06 {
       background-image: url("@img/gallery/img-06.jpg");
     }
 
-    &:nth-child(7) {
+    &_07 {
       background-image: url("@img/gallery/img-07.jpg");
     }
 
-    &:nth-child(8) {
+    &_08 {
       background-image: url("@img/gallery/img-08.jpg");
     }
 
-    &:nth-child(9) {
+    &_09 {
       background-image: url("@img/gallery/img-09.jpg");
     }
 
-    &:nth-child(10) {
+    &_10 {
       background-image: url("@img/gallery/img-10.jpg");
+    }
+
+    &_11 {
+      background-image: url("@img/gallery/img-11.jpg");
+    }
+
+    &_12 {
+      background-image: url("@img/gallery/img-12.jpg");
+    }
+
+    &_13 {
+      background-image: url("@img/gallery/img-13.jpg");
+    }
+
+    &_14 {
+      background-image: url("@img/gallery/img-14.jpg");
+    }
+
+    &_15 {
+      background-image: url("@img/gallery/img-15.jpg");
+    }
+
+    &_16 {
+      background-image: url("@img/gallery/img-16.jpg");
+    }
+
+    &_17 {
+      background-image: url("@img/gallery/img-17.jpg");
+    }
+
+    &_18 {
+      background-image: url("@img/gallery/img-18.jpg");
+    }
+
+    &_19 {
+      background-image: url("@img/gallery/img-19.jpg");
+    }
+
+    &_20 {
+      background-image: url("@img/gallery/img-20.jpg");
     }
 
     &:hover .gallery__inner {
