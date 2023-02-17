@@ -1,4 +1,4 @@
-.sertif {
+.certif {
   &__container {
   }
 
@@ -9,9 +9,9 @@
 
   &__items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 
   &__item {
@@ -21,26 +21,28 @@
     background-size: cover;
     background-position: center;
 
-    &:nth-child(1) {
+    &_01 {
       background-image: url("@img/certif/img-01.jpg");
     }
 
-    &:nth-child(2) {
+    &_02 {
       background-image: url("@img/certif/img-02.jpg");
     }
 
-    &:nth-child(3) {
+    &_03 {
       background-image: url("@img/certif/img-03.jpg");
     }
-  }
 
-  &__control {
-    justify-content: flex-end;
+    &_04 {
+      background-image: url("@img/certif/img-04.jpg");
+    }
 
-    & > div:not(:last-child) {
-      margin-right: 30px;
+    &_05 {
+      background-image: url("@img/certif/img-05.jpg");
+    }
+
+    &_06 {
+      background-image: url("@img/certif/img-06.jpg");
     }
   }
-}
-.container {
 }

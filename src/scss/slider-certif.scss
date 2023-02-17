@@ -1,0 +1,33 @@
+.certif__container .itcss#slider-certif {
+  max-width: none;
+  // position: relative;
+}
+
+.itcss#slider-certif .itcss__indicators {
+  display: none;
+}
+
+.itcss#slider-certif .itcss__wrapper {
+  background-color: #fff;
+}
+
+.itcss#slider-certif .itcss__items {
+  counter-reset: slide;
+}
+
+.itcss#slider-certif .itcss__item {
+  counter-increment: slide;
+}
+
+.itcss#slider-certif .pages__items {
+  margin-top: 60px;
+  margin-bottom: 130px;
+  width: 100vw;
+}
+
+.itcss#slider-certif .btn-wrapper {
+  position: absolute;
+  bottom: 120px;
+  left: 185px;
+  display: flex;
+}
