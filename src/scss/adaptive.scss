@@ -39,21 +39,6 @@
       padding-top: 220px;
       margin-bottom: 170px;
     }
-
-    &__btn {
-    }
-  }
-
-  .gallery__container .itcss#slider-gallery {
-  }
-
-  .itcss#slider-gallery .itcss__indicators {
-  }
-
-  .itcss#slider-gallery .itcss__wrapper {
-  }
-
-  .itcss#slider-gallery .itcss__items {
   }
 
   .itcss#slider-gallery .itcss__item {
@@ -62,9 +47,22 @@
   }
 
   .itcss#slider-gallery .pages__items {
+    grid-column: 1 / -1;
   }
 
   .itcss#slider-gallery .btn-wrapper {
+    left: 185px;
+  }
+
+  .gallery {
+    &__container {
+      max-width: 1200px;
+      padding: 0 15px;
+    }
+
+    &__title {
+      margin-left: 0;
+    }
   }
 }
 
@@ -90,9 +88,6 @@
   }
 
   .hero {
-    &__container {
-    }
-
     &__img {
       width: 100%;
     }
@@ -115,9 +110,6 @@
     &__title {
       padding-top: 0;
       margin-bottom: 0;
-    }
-
-    &__btn {
     }
   }
 
@@ -143,6 +135,16 @@
 
   .arcade__inner {
     display: none;
+  }
+
+  .gallery {
+    &__items {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    &__item {
+      min-height: 460px;
+    }
   }
 
   .footer__column {
@@ -195,19 +197,10 @@
   }
 
   .hero {
-    &__container {
-    }
-
-    &__img {
-    }
-
     &__column {
       &_text {
         flex-direction: column;
         align-items: flex-start;
-      }
-
-      &_img {
       }
     }
 
@@ -277,5 +270,10 @@
 
   .title {
     font-size: 26px;
+  }
+
+  .itcss#slider-gallery .btn-wrapper {
+    left: 0;
+    bottom: 180px;
   }
 }

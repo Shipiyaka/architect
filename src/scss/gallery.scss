@@ -13,14 +13,13 @@
   &__items {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, 210px);
-    // margin-bottom: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
 
   &__item {
     position: relative;
-    width: 210px;
-    height: 260px;
+    min-width: 210px;
+    min-height: 260px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
