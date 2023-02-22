@@ -29,9 +29,10 @@
     width: 100%;
     z-index: 70;
     margin: 0;
+    visibility: hidden;
     opacity: 0;
     overflow: hidden;
-    transition: 0.5s all;
+    transition: visibility 0.5s linear, opacity 0.5s linear;
   }
 }
 
@@ -45,7 +46,7 @@
   margin: 0;
   display: block;
   padding: 2px 0;
-  transition: all 0.1s ease-in-out;
+  transition: visibility 0.1s ease-in-out;
   position: relative;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -64,7 +65,8 @@
 
 .burger-icon {
   @media only screen and (min-width: 769px) {
-    display: none;
+    // display: none;
+    visibility: hidden;
   }
 }
 
@@ -73,6 +75,7 @@
 }
 
 #check-burger:checked ~ .nav-top {
+  visibility: visible;
   opacity: 1;
 }
 

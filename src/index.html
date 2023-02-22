@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   @@include('html/head.html',{ "title":"Digital Project" })
-  <body>
+  <body data-barba="wrapper">
     @@include('html/header.html',{})
-    <main>
+    <main data-barba="container" data-barba-namespace="home">
       @@include('html/hero.html') @@include('html/about.html')
       @@include('html/tasks.html') @@include('html/projects.html')
       @@include('html/contact.html')
     </main>
-    @@include('html/footer.html',{})
-    <script src="js/app.min.js"></script>
+    @@include('html/footer.html',{}) @@include('html/scripts.html')
   </body>
 </html>

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const sliderCertif = () => {
   const slider_certif = new ItcSimpleSlider("#slider-certif", {
     loop: true,
     autoplay: false,
@@ -12,4 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".btn-next_certif").onclick = function () {
     slider_certif.next();
   };
-});
+};

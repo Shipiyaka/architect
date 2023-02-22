@@ -1,0 +1,19 @@
+.container .itcss.slider-reset {
+  max-width: none;
+}
+
+.itcss.slider-reset .itcss__indicators {
+  display: none;
+}
+
+.itcss.slider-reset .itcss__wrapper {
+  background-color: #fff;
+}
+
+.itcss.slider-reset .itcss__items {
+  counter-reset: slide;
+}
+
+.itcss.slider-reset .itcss__item {
+  counter-increment: slide;
+}

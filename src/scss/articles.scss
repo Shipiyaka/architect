@@ -13,8 +13,8 @@
   }
 
   &__items {
-    display: grid;
-    gap: 30px;
+    // display: grid;
+    // gap: 30px;
     margin-bottom: 60px;
   }
 
@@ -25,13 +25,17 @@
     @media (max-width: 992px) {
       flex-wrap: wrap;
     }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &__column {
-    width: auto;
+    // width: auto;
 
     &_img {
-      height: 100%;
+      // height: 100%;
       width: 670px;
       background-repeat: no-repeat;
       background-position: center;
@@ -42,16 +46,28 @@
       }
     }
 
-    &_first {
+    &_01 {
       background-image: url("@img/articles/school.jpg");
     }
 
-    &_second {
+    &_02 {
       background-image: url("@img/articles/parking.jpg");
     }
 
-    &_third {
+    &_03 {
       background-image: url("@img/articles/office.jpg");
+    }
+
+    &_04 {
+      background-image: url("@img/articles/school-bw.jpg");
+    }
+
+    &_05 {
+      background-image: url("@img/articles/parking-bw.jpg");
+    }
+
+    &_06 {
+      background-image: url("@img/articles/office-bw.jpg");
     }
 
     &_text {

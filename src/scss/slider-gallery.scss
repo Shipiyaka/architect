@@ -1,25 +1,7 @@
-.gallery__container .itcss#slider-gallery {
-  max-width: none;
-  // position: relative;
-}
-
-.itcss#slider-gallery .itcss__indicators {
-  display: none;
-}
-
-.itcss#slider-gallery .itcss__wrapper {
-  background-color: #fff;
-}
-
-.itcss#slider-gallery .itcss__items {
-  counter-reset: slide;
-}
-
 .itcss#slider-gallery .itcss__item {
   max-width: 1200px;
   margin-left: $left-border;
   margin-right: $left-border;
-  counter-increment: slide;
 }
 
 .itcss#slider-gallery .pages__items {

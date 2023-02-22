@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const sliderGallery = () => {
   const slider_gallery = new ItcSimpleSlider("#slider-gallery", {
     loop: true,
     autoplay: false,
@@ -12,4 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".btn-next_gallery").onclick = function () {
     slider_gallery.next();
   };
-});
+};

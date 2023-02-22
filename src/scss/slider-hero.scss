@@ -1,24 +1,10 @@
 .hero__container .itcss#slider-hero {
-  max-width: none;
   position: relative;
-}
-
-.itcss#slider-hero .itcss__indicators {
-  display: none;
-}
-
-.itcss#slider-hero .itcss__wrapper {
-  background-color: #fff;
-}
-
-.itcss#slider-hero .itcss__items {
-  counter-reset: slide;
 }
 
 .itcss#slider-hero .itcss__item {
   display: flex;
   align-items: center;
-  counter-increment: slide;
   max-width: 1200px;
   margin-left: $left-border;
   margin-right: $left-border;

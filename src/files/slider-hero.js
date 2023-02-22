@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const sliderHero = () => {
   const slider_hero = new ItcSimpleSlider("#slider-hero", {
     loop: true,
     autoplay: false,
@@ -12,4 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".btn-next_hero").onclick = function () {
     slider_hero.next();
   };
-});
+};
