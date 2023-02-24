@@ -1,7 +1,4 @@
 .certif {
-  &__container {
-  }
-
   &__title {
     margin-bottom: 42px;
     max-width: 469px;
@@ -11,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // margin-bottom: 60px;
   }
 
   &__item {

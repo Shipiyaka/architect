@@ -1,9 +1,6 @@
 .article {
   margin-bottom: 120px;
 
-  &__container {
-  }
-
   &__title {
     margin-bottom: 20px;
     word-wrap: break-word;
@@ -15,6 +12,11 @@
     &_black {
       font-weight: 700;
       color: #333333;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 47px;
+      line-height: 50px;
     }
   }
 
@@ -45,7 +47,7 @@
 
       @media (max-width: 768px) {
         float: none;
-        margin-right: calc(100vw - 419px);
+        max-width: none;
 
         &::after {
           display: inline-block;
@@ -55,7 +57,7 @@
     }
 
     &_third {
-      background-image: url("@img/article/img-03.jpg");
+      height: auto;
     }
   }
   &__subtitle {
