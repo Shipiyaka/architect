@@ -26,7 +26,86 @@
           >Galym.sultanov@mail.ru</a
         >
 
-        <button class="get-in__btn btn btn-reset">Feedback</button>
+        <button
+          class="popup__show get-in__btn btn btn-reset"
+          rel="popup__question"
+        >
+          Feedback
+        </button>
+
+        <div class="popup" id="popup__question">
+          <div class="popup__container">
+            <div class="popup__wrapper">
+              <div id="formQuestion">
+                <form
+                  role="form"
+                  action="/requestFine"
+                  class="form__question form"
+                  autocomplete="off"
+                  method="POST"
+                >
+                  <div class="popup__top">
+                    <h1 class="popup__title">Ask a question</h1>
+                    <div class="popup__close"></div>
+                  </div>
+                  <input
+                    type="text"
+                    id="formName"
+                    name="name"
+                    placeholder="Name"
+                    class="form__input _name input-reset"
+                  />
+                  <input
+                    type="tel"
+                    id="formNumber"
+                    name="number"
+                    placeholder="Tel.*"
+                    class="form__input _req _number input-reset"
+                  />
+                  <input
+                    type="email"
+                    id="formEmail"
+                    name="email"
+                    placeholder="Email*"
+                    class="form__input _req _email input-reset"
+                  />
+                  <input
+                    type="text"
+                    id="formInterest"
+                    name="interest"
+                    placeholder="Interested service/ product"
+                    class="form__input _interest input-reset"
+                  />
+                  <textarea
+                    id="formMessage"
+                    name="message"
+                    id=""
+                    placeholder="Message"
+                    class="form__textarea _req _message textarea-reset"
+                  ></textarea>
+                  <div class="checkbox">
+                    <input
+                      id="formAgreement"
+                      checked
+                      type="checkbox"
+                      name="agreement"
+                      class="checkbox__input _req"
+                    />
+                    <label for="formAgreement" class="checkbox__label"
+                      ><span
+                        >I give my consent to the processing of personal data in
+                        accordance with <a href="#">the terms</a>*</span
+                      ></label
+                    >
+                  </div>
+                  <button type="submit" class="form__btn btn btn-reset">
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="get-in__column get-in__column_img">
